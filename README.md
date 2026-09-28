@@ -17,6 +17,8 @@
 - 在线帮助 / 使用说明 / 问题反馈：https://www.licstack.com/quickshot/help.html
 
 ## 版本
-当前预构建版本：`1.0.5`
+当前预构建版本：`1.0.6`
+
+- 修复连续点击悬浮球时菜单层叠的问题（菜单全局唯一，重复点击只保留最新一张）
 
 > 注：录屏功能依赖 `_internal/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe`，已随本仓库一并提供，无需另行安装 ffmpeg。
