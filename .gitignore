@@ -1,0 +1,32 @@
+# ===== QuickShot（截图快手）仓库：仅提交可运行产物 =====
+# 入库内容：QuickShot.exe + _internal/（PyInstaller onedir 发行版）+ README.md + 本文件
+# 源码、后端、资源目录、构建脚本一律不入库（运行所需内容已全部打包进 exe/_internal）
+
+# ---- 源码 / 后端 / 资源（不入库，锚定根目录，勿用裸名以免误伤 _internal/ 内的打包资源）----
+*.py
+/assets/
+/server/
+/ui/
+/quickrec/
+/build_harden/
+/build_onefile/
+
+# ---- Python 缓存 ----
+__pycache__/
+*.pyc
+
+# ---- 构建 / 打包目录与脚本 ----
+dist/
+build/
+msi/
+msix_pkg/
+preview/
+*.spec
+*.bat
+*.ps1
+
+# ---- 日志 / 临时 / 调试输出 ----
+*.log
+/_tmp_*/
+/_inspect/
+nul
